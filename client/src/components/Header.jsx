@@ -19,7 +19,7 @@ export default function Header() {
           <Link to={"/"} className="content-center">
             <h1 className="text-xl pt-3 font-semibold">Home</h1>
           </Link>
-          <Link to={"/"}>
+          <Link to={"/nearestcenter"}>
             <h1 className="text-xl  pt-3 font-semibold">Nearest Center</h1>
           </Link>{" "}
           <Link to={user?"/dispose":"/login"}>

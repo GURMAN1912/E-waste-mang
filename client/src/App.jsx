@@ -11,6 +11,7 @@ import Registerpage from "./pages/Registerpage.jsx";
 import Accountpage from "./pages/Accountpage";
 import Details from "./container/Details";
 import Disposepage from "./pages/Disposepage";
+import Nearestcenterpage from "./pages/Nearestcenterpage";
 axios.defaults.baseURL = "http://127.0.0.1:4000";
 axios.defaults.withCredentials = true;
 
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/account" element={<Accountpage />} />
           <Route path="/dispose" element={<Disposepage />} />
           <Route path="/details" element={<Details />} />
+          <Route path="/nearestcenter" element={<Nearestcenterpage/>}/>
         </Routes>
         <Footer></Footer>
       </UserContextProvider>

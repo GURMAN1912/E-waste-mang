@@ -10,7 +10,7 @@ export default function Loginpage() {
   const [email, SetEmail] = React.useState("");
   const [redirect,setRedirect]=React.useState(false)
   const [password, SetPassword] = React.useState("");
-  const {setUser}=React.useContext(UserContext)  
+  const {setUser}=React.useContext(UserContext)
   async function handleLoginSubmit(ev)
   {
     ev.preventDefault()
