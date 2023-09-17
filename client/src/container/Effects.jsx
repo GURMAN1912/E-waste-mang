@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import ewaste3 from "../assests/e-waste-3.png";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function Effects() {
@@ -71,16 +72,18 @@ export default function Effects() {
       </div>
           </div>
       <div className=" flex justify-center m- rounded-full  mb-10 text-white text-2xl">
+        <Link to={"https://teachablemachine.withgoogle.com/models/5TWHcOboV/"}>
         <motion.button
           whileHover={{
-              scale: 1.2,
-              transition: { duration: 1 },
-            }}
-            whileTap={{ scale: 0.9 }}
-            className=" bg-blue-400 rounded-full p-5"
-            >
+            scale: 1.2,
+            transition: { duration: 1 },
+          }}
+          whileTap={{ scale: 0.9 }}
+          className=" bg-blue-400 rounded-full p-5"
+          >
           Know Harmful Effect of your E-waste
         </motion.button>
+              </Link>
         </div>
             </>
   );
