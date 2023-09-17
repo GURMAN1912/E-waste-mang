@@ -6,12 +6,16 @@ const jwt=require("jsonwebtoken")
 const bcrypt=require("bcryptjs")
 const User= require("./models/User.js")
 const CookieParser=require("cookie-parser")
+const dotenv =require("dotenv")
 // emitter.setMaxListeners(15); // Increase the limit to 15 (or the number you need)
-
+dotenv.config()
+const port=process.env.PORT ||"4000"
+const Database=process.env.MONGO_DB||"mongodb+srv://gurmansambhi1912:Pd7D3LuxQEcDG41w@e-waste.mui5zwm.mongodb.net/"
 const bcryptSalt=bcrypt.genSaltSync(10)
 const jwtSecret="fhdofhorbuaojhdasfhouuw"
-mongoose.connect("mongodb://localhost:27017/UserDB").then(()=>{
-        console.log(`mongodb connected with server: 27017`);
+
+mongoose.connect(Database).then(()=>{
+        console.log(`mongodb connected `);
     }).catch((err)=>{
         console.log(err)
     })
@@ -79,5 +83,5 @@ app.post("/logout",(req,res)=>{
 })
 
 
-//Pd7D3LuxQEcDG41w
+// Pd7D3LuxQEcDG41w
 app.listen(4000);
