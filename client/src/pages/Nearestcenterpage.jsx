@@ -6,7 +6,7 @@ function Nearestcenterpage() {
     <div className="p-10 bg-green-200 min-h-screen">
       <h1 className='text-center text-5xl mb-5'>Nearby Centres</h1>
       <div className=" p-4 flex justify-center">
-        <div className='w-2/3 rounded-xl'>
+        <div className=' w-2/3'>
       <MapComponent />
         </div>
       </div>
